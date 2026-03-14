@@ -4,3 +4,8 @@ function changeText(){
   
         
 }
+
+function operatorFunction (){
+    let str = "examples"
+    document.getElementById("operator").innerHTML += str;
+}
