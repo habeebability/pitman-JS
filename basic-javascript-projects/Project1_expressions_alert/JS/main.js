@@ -20,3 +20,17 @@ document.writeln(C)
 // Expression
 document.writeln(D)
 
+// Concatenation
+let sent1 = "This is the beginning of the string";
+let sent2 = "And this is the end of the string"
+
+// expression
+const fullSentence = sent1 + sent2;
+
+let exp = 4 + 9;
+
+
+// Events
+function displayDate() {
+  document.getElementById("demo").innerHTML = Date();
+}
