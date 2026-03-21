@@ -5,12 +5,13 @@ let user = {
     sound: "Hey"
 }
 
-
+// function getName
 function getName(){
 
     document.getElementById("Dictionary").innerHTML = user.name;
 }
 
+// function to delete
 function deleteSound(){
     delete user.sound;
 
