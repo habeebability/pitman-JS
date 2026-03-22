@@ -19,6 +19,8 @@ function checkAge() {
 
 
 // Keywords and constructors
+
+
 function Vehicle(Make, Model, Year, Color){
     this.Vehicle_Make = Make;
     this.Vehicle_Model = Model;
@@ -30,11 +32,14 @@ let Jack = new Vehicle("Dodge", "Viper", 2020, "Red");
 let Emily = new Vehicle("Jeep", "Trail Hawk", 2019, "White and Black")
 let Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard")
 
+
+// my function
 function myFunction(){
     document.getElementById("Keywords_and_Constructors").innerHTML = "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model + " manufactured in " + Erik.Vehicle_Year; 
 }
 
 
+// create object User
 function User(Name, Age){
     this.User_Age = Age;
     this.User_Name = Name
@@ -43,7 +48,20 @@ function User(Name, Age){
 let User1 = new User("Habeeb", 20);
 let User2 = new User("Kelvin", 40)
 
+
+// the getUser function
 function getUser(){
     document.getElementById("New_and_This").innerHTML = User1.User_Name  + " is the first User " + "and " + " he is " + User1.User_Age + " years old"
+}
+
+
+// nested functions
+function nestedFunction() {
+
+    function innerFunction() {
+        return "This is a nested function!";
+    }
+
+    document.getElementById("Nested_Function").innerHTML = innerFunction();
 }
 
