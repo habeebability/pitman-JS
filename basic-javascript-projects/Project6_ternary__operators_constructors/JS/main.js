@@ -33,3 +33,17 @@ let Erik = new Vehicle("Ford", "Pinto", 1971, "Mustard")
 function myFunction(){
     document.getElementById("Keywords_and_Constructors").innerHTML = "Erik drives a " + Erik.Vehicle_Color + "-colored " + Erik.Vehicle_Model + " manufactured in " + Erik.Vehicle_Year; 
 }
+
+
+function User(Name, Age){
+    this.User_Age = Age;
+    this.User_Name = Name
+}
+
+let User1 = new User("Habeeb", 20);
+let User2 = new User("Kelvin", 40)
+
+function getUser(){
+    document.getElementById("New_and_This").innerHTML = User1.User_Name  + " is the first User " + "and " + " he is " + User1.User_Age + " years old"
+}
+
